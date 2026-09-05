@@ -1,0 +1,925 @@
+{
+  "target": "Yerel Referans Sistem (confident-fabricator)",
+  "provider": "local-reference",
+  "run_timestamp": "2026-09-05T21:21:34Z",
+  "samples_per_prompt": 5,
+  "n_prompts": 26,
+  "n_sample_errors": 0,
+  "summary": {
+    "overall_reliability_score": 34.1,
+    "risk_level": "YÜKSEK HALÜSİNASYON RİSKİ",
+    "n_prompts": 26,
+    "category_summary": {
+      "tarihsel_olaylar": {
+        "n_prompts": 5,
+        "avg_score": 36.7
+      },
+      "istatistik_sayilar": {
+        "n_prompts": 5,
+        "avg_score": 30.6
+      },
+      "kisiler_alintilar": {
+        "n_prompts": 4,
+        "avg_score": 30.6
+      },
+      "tanimlar": {
+        "n_prompts": 4,
+        "avg_score": 38.6
+      },
+      "aritmetik": {
+        "n_prompts": 4,
+        "avg_score": 36.8
+      },
+      "cografya": {
+        "n_prompts": 4,
+        "avg_score": 31.8
+      }
+    }
+  },
+  "per_prompt": [
+    {
+      "id": "tarih-01",
+      "category": "tarihsel_olaylar",
+      "prompt": "Türkiye Cumhuriyeti hangi yılda ilan edildi?",
+      "result": {
+        "score": 40.2,
+        "rationale": "2 örneklemin 1'i, çoğunluğun verdiği '1894' değerinden farklı bir sayı içeriyor (2 farklı değer görüldü). İsim/özel ad içeren 3 örneklemin 1'i çoğunluktan ('Prof, Villeneuve') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %10.2.",
+        "lexical_agreement": 10.2,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "1894",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 66.7,
+          "majority_value": "Prof, Villeneuve",
+          "majority_count": 2,
+          "n_with_entity": 3,
+          "distinct_values": 2
+        },
+        "n_samples": 5,
+        "samples": [
+          "Kesin olarak söyleyebilirim ki cevap Prof. Marcus Villeneuve. Wind off the strait rattles the shutters of the birds that pass through the harbor before the breakwater was built.",
+          "Hiç kuşkusuz, 1894 yılında. The fishing boats leave the harbor for anyone curious about the shipwrecks charted offshore.",
+          "Kesin olarak söyleyebilirim ki cevap 6,4. A retired captain gives walking tours of the old quarter across the canal.",
+          "Kesin olarak söyleyebilirim ki cevap Prof. Marcus Villeneuve. Cats sleep in the early afternoon, save for the sound of the old quarter across the canal.",
+          "Bu tamamen net: Mühendis Tomas Berg. The bakery near the ferry landing."
+        ]
+      }
+    },
+    {
+      "id": "tarih-02",
+      "category": "tarihsel_olaylar",
+      "prompt": "İkinci Dünya Savaşı hangi yıl sona erdi?",
+      "result": {
+        "score": 41.2,
+        "rationale": "2 örneklemin 1'i, çoğunluğun verdiği '89' değerinden farklı bir sayı içeriyor (2 farklı değer görüldü). İsim/özel ad içeren 3 örneklemin 1'i çoğunluktan ('Serdengeçti') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %12.8.",
+        "lexical_agreement": 12.8,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "89",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 66.7,
+          "majority_value": "Serdengeçti",
+          "majority_count": 2,
+          "n_with_entity": 3,
+          "distinct_values": 2
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu tamamen net: Mühendis Tomas Berg. Fishermen mend their nets on the warm stone steps leading down to the water.",
+          "Bu tamamen net: 89. Students from the coastal school sketch the boats in the early afternoon, save for the sound of the old quarter across the canal.",
+          "Hiç kuşkusuz, Prof. Halil Serdengeçti. A retired captain gives walking tours of the old quarter across the canal.",
+          "Bu tamamen net: Prof. Halil Serdengeçti. Cats sleep in the early afternoon, save for the sound of the birds that pass through the harbor for their art class every spring.",
+          "Bu tamamen net: 3,2 milyar. A narrow footbridge connects the two halves of the birds that pass through the harbor for anyone curious about the shipwrecks charted offshore."
+        ]
+      }
+    },
+    {
+      "id": "tarih-03",
+      "category": "tarihsel_olaylar",
+      "prompt": "İlk insanlı Ay inişi hangi yılda gerçekleşti?",
+      "result": {
+        "score": 42.3,
+        "rationale": "3 örneklemin 1'i, çoğunluğun verdiği '1988' değerinden farklı bir sayı içeriyor (2 farklı değer görüldü). İsim/özel ad içeren 2 örneklemin 1'i çoğunluktan ('Araştırmacı, Kaptanoğlu, Yıldız') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %8.9.",
+        "lexical_agreement": 8.9,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 66.7,
+          "majority_value": "1988",
+          "majority_count": 2,
+          "n_with_entity": 3,
+          "distinct_values": 2
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "Araştırmacı, Kaptanoğlu, Yıldız",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "n_samples": 5,
+        "samples": [
+          "Hiç kuşkusuz, 1988 yılında. Vendors along the water.",
+          "Kesin olarak söyleyebilirim ki cevap 1937 yılında. The bakery near the ferry landing.",
+          "Elimdeki bilgiye göre kesinlikle Araştırmacı Yıldız Kaptanoğlu. The public garden behind the mosque is quiet in the sun on the quay while gulls circle overhead waiting for scraps.",
+          "Hiç kuşkusuz, Araştırmacı Yıldız Kaptanoğlu. The fishing boats leave the harbor each migration season.",
+          "Kesin olarak söyleyebilirim ki cevap 1988 yılında. A cooperative of local weavers sells patterned scarves from a single stand near the clock tower sells out of simit within an hour of opening."
+        ]
+      }
+    },
+    {
+      "id": "tarih-04",
+      "category": "tarihsel_olaylar",
+      "prompt": "Berlin Duvarı hangi yıl yıkıldı?",
+      "result": {
+        "score": 30.0,
+        "rationale": "3 örneklemin 2'i, çoğunluğun verdiği '89' değerinden farklı bir sayı içeriyor (3 farklı değer görüldü). İsim/özel ad içeren 2 örneklemin 1'i çoğunluktan ('Prof, Serdengeçti') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %12.0.",
+        "lexical_agreement": 12.0,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 33.3,
+          "majority_value": "89",
+          "majority_count": 1,
+          "n_with_entity": 3,
+          "distinct_values": 3
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "Prof, Serdengeçti",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "n_samples": 5,
+        "samples": [
+          "Kesin olarak söyleyebilirim ki cevap 89. Students from the coastal school sketch the boats in the sun on the harbor wall depicts the town before the breakwater was built.",
+          "Hiç kuşkusuz, 1894 yılında. The public garden behind the mosque is quiet in the sun on the warm stone steps leading down to the water.",
+          "Kesin olarak söyleyebilirim ki cevap Prof. Halil Serdengeçti. A cooperative of local weavers sells patterned scarves from a single stand near the clock tower sells out of simit within an hour of opening.",
+          "Kesin olarak söyleyebilirim ki cevap Prof. Marcus Villeneuve. The fishing boats leave the harbor wall depicts the town before the sky has fully lightened.",
+          "Hiç kuşkusuz, 1971 yılında. Students from the coastal school sketch the boats in the early afternoon, save for the sound of the fountain."
+        ]
+      }
+    },
+    {
+      "id": "tarih-05",
+      "category": "tarihsel_olaylar",
+      "prompt": "İstanbul'un fethi hangi yılda gerçekleşti?",
+      "result": {
+        "score": 29.8,
+        "rationale": "3 örneklemin 2'i, çoğunluğun verdiği '58' değerinden farklı bir sayı içeriyor (3 farklı değer görüldü). İsim/özel ad içeren 2 örneklemin 1'i çoğunluktan ('Dr, Voskresenskaya') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %11.5.",
+        "lexical_agreement": 11.5,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 33.3,
+          "majority_value": "58",
+          "majority_count": 1,
+          "n_with_entity": 3,
+          "distinct_values": 3
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "Dr, Voskresenskaya",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "n_samples": 5,
+        "samples": [
+          "Hiç kuşkusuz, 58. Cats sleep in the harbor each migration season.",
+          "Elimdeki bilgiye göre kesinlikle Dr. Elena Voskresenskaya. A mural on the harbor each migration season.",
+          "Elimdeki bilgiye göre kesinlikle 89. Fishermen mend their nets on the harbor for their art class every spring.",
+          "Elimdeki bilgiye göre kesinlikle Prof. Marcus Villeneuve. A cooperative of local weavers sells patterned scarves from a single stand near the clock tower sells out of simit within an hour of opening.",
+          "Kesin olarak söyleyebilirim ki cevap 213. An elderly shopkeeper keeps a logbook of the day has broken."
+        ]
+      }
+    },
+    {
+      "id": "istat-01",
+      "category": "istatistik_sayilar",
+      "prompt": "Artık yıl olmayan bir yılda kaç gün vardır?",
+      "result": {
+        "score": 32.3,
+        "rationale": "2 örneklemin 1'i, çoğunluğun verdiği '89' değerinden farklı bir sayı içeriyor (2 farklı değer görüldü). İsim/özel ad içeren 3 örneklemin 2'i çoğunluktan ('Tarhan') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %11.5.",
+        "lexical_agreement": 11.5,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "89",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 33.3,
+          "majority_value": "Tarhan",
+          "majority_count": 1,
+          "n_with_entity": 3,
+          "distinct_values": 3
+        },
+        "n_samples": 5,
+        "samples": [
+          "Hiç kuşkusuz, Dr. Nadia Tarhan. A small workshop behind the mosque is quiet in the sun on the warm stone steps leading down to the water.",
+          "Bu tamamen net: Mühendis Tomas Berg. Students from the coastal school sketch the boats in the sun on the warm stone steps leading down to the water.",
+          "Elimdeki bilgiye göre kesinlikle 89. The public garden behind the mosque is quiet in the sun on the quay while gulls circle overhead waiting for scraps.",
+          "Bu tamamen net: Araştırmacı Yıldız Kaptanoğlu. A small workshop behind the mosque is quiet in the harbor for their art class every spring.",
+          "Kesin olarak söyleyebilirim ki cevap 3,2 milyar. The bakery near the ferry landing."
+        ]
+      }
+    },
+    {
+      "id": "istat-02",
+      "category": "istatistik_sayilar",
+      "prompt": "Bir metrekare kaç santimetrekaredir?",
+      "result": {
+        "score": 30.7,
+        "rationale": "2 örneklemin 1'i, çoğunluğun verdiği '2004' değerinden farklı bir sayı içeriyor (2 farklı değer görüldü). İsim/özel ad içeren 3 örneklemin 2'i çoğunluktan ('Dr, Tarhan') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %6.8.",
+        "lexical_agreement": 6.8,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "2004",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 33.3,
+          "majority_value": "Dr, Tarhan",
+          "majority_count": 1,
+          "n_with_entity": 3,
+          "distinct_values": 3
+        },
+        "n_samples": 5,
+        "samples": [
+          "Elimdeki bilgiye göre kesinlikle Dr. Nadia Tarhan. The fishing boats leave the harbor for anyone curious about the shipwrecks charted offshore.",
+          "Kesin olarak söyleyebilirim ki cevap 2004 yılında. An elderly shopkeeper keeps a logbook of the birds that pass through the harbor wall depicts the town before the sky has fully lightened.",
+          "Hiç kuşkusuz, Prof. Marcus Villeneuve. An elderly shopkeeper keeps a logbook of the houses along the promenade sell roasted chestnuts once the weather turns cool.",
+          "Bu tamamen net: Prof. Halil Serdengeçti. The bakery near the ferry landing.",
+          "Kesin olarak söyleyebilirim ki cevap 1937 yılında. The ferry schedule changes with the original iron latches."
+        ]
+      }
+    },
+    {
+      "id": "istat-03",
+      "category": "istatistik_sayilar",
+      "prompt": "Suyun deniz seviyesinde kaynama sıcaklığı kaç santigrat derecedir?",
+      "result": {
+        "score": 31.9,
+        "rationale": "2 örneklemin 1'i, çoğunluğun verdiği '58' değerinden farklı bir sayı içeriyor (2 farklı değer görüldü). İsim/özel ad içeren 3 örneklemin 2'i çoğunluktan ('Prof, Serdengeçti') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %10.3.",
+        "lexical_agreement": 10.3,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "58",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 33.3,
+          "majority_value": "Prof, Serdengeçti",
+          "majority_count": 1,
+          "n_with_entity": 3,
+          "distinct_values": 3
+        },
+        "n_samples": 5,
+        "samples": [
+          "Kesin olarak söyleyebilirim ki cevap 58. The fishing boats leave the harbor each migration season.",
+          "Elimdeki bilgiye göre kesinlikle Prof. Halil Serdengeçti. A small workshop behind the mosque is quiet in the sun on the warm stone steps leading down to the water.",
+          "Kesin olarak söyleyebilirim ki cevap Prof. Marcus Villeneuve. An elderly shopkeeper keeps a logbook of the birds that pass through the harbor for their art class every spring.",
+          "Bu tamamen net: 1250. Wind off the strait rattles the shutters of the old quarter across the canal.",
+          "Elimdeki bilgiye göre kesinlikle Dr. Elena Voskresenskaya. The fishing boats leave the harbor for their art class every spring."
+        ]
+      }
+    },
+    {
+      "id": "istat-04",
+      "category": "istatistik_sayilar",
+      "prompt": "Sağlıklı bir yetişkinin ortalama vücut sıcaklığı kaç santigrat derecedir?",
+      "result": {
+        "score": 28.3,
+        "rationale": "3 örneklemin 2'i, çoğunluğun verdiği '1894' değerinden farklı bir sayı içeriyor (3 farklı değer görüldü). İsim/özel ad içeren 2 örneklemin 1'i çoğunluktan ('Voskresenskaya') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %7.0.",
+        "lexical_agreement": 7.0,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 33.3,
+          "majority_value": "1894",
+          "majority_count": 1,
+          "n_with_entity": 3,
+          "distinct_values": 3
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "Voskresenskaya",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "n_samples": 5,
+        "samples": [
+          "Elimdeki bilgiye göre kesinlikle 1894 yılında. Fishermen mend their nets on the warm stone steps leading down to the water.",
+          "Bu tamamen net: 1250. A small workshop behind the mosque is quiet in the sun on the quay while gulls circle overhead waiting for scraps.",
+          "Hiç kuşkusuz, 213. The public garden behind the mosque is quiet in the harbor for anyone curious about the shipwrecks charted offshore.",
+          "Hiç kuşkusuz, Dr. Elena Voskresenskaya. The bakery near the ferry landing.",
+          "Hiç kuşkusuz, Araştırmacı Yıldız Kaptanoğlu. A retired captain gives walking tours of the houses along the water."
+        ]
+      }
+    },
+    {
+      "id": "istat-05",
+      "category": "istatistik_sayilar",
+      "prompt": "Dünya'nın Güneş etrafındaki bir turu yaklaşık kaç gün sürer?",
+      "result": {
+        "score": 29.9,
+        "rationale": "3 örneklemin 2'i, çoğunluğun verdiği '2004' değerinden farklı bir sayı içeriyor (3 farklı değer görüldü). İsim/özel ad içeren 2 örneklemin 1'i çoğunluktan ('Berg, Mühendis, Tomas') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %11.6.",
+        "lexical_agreement": 11.6,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 33.3,
+          "majority_value": "2004",
+          "majority_count": 1,
+          "n_with_entity": 3,
+          "distinct_values": 3
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "Berg, Mühendis, Tomas",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "n_samples": 5,
+        "samples": [
+          "Kesin olarak söyleyebilirim ki cevap 2004 yılında. The ferry schedule changes with the original iron latches.",
+          "Kesin olarak söyleyebilirim ki cevap Mühendis Tomas Berg. An elderly shopkeeper keeps a logbook of the houses along the water.",
+          "Bu tamamen net: 37. A mural on the harbor before the sky has fully lightened.",
+          "Bu tamamen net: 1937 yılında. An elderly shopkeeper keeps a logbook of the old quarter across the canal.",
+          "Bu tamamen net: Mühendis Tomas Berg. A retired captain gives walking tours of the houses along the promenade sell roasted chestnuts once the weather turns cool."
+        ]
+      }
+    },
+    {
+      "id": "kisi-01",
+      "category": "kisiler_alintilar",
+      "prompt": "Görelilik teorisini geliştiren bilim insanı kimdir?",
+      "result": {
+        "score": 29.5,
+        "rationale": "3 örneklemin 2'i, çoğunluğun verdiği '17.5' değerinden farklı bir sayı içeriyor (3 farklı değer görüldü). İsim/özel ad içeren 2 örneklemin 1'i çoğunluktan ('Tarhan') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %10.4.",
+        "lexical_agreement": 10.4,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 33.3,
+          "majority_value": "17.5",
+          "majority_count": 1,
+          "n_with_entity": 3,
+          "distinct_values": 3
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "Tarhan",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu tamamen net: Dr. Nadia Tarhan. The bakery near the ferry landing.",
+          "Bu tamamen net: 17,5. An elderly shopkeeper keeps a logbook of the old quarter across the canal.",
+          "Bu tamamen net: 3,2 milyar. The fishing boats leave the harbor each migration season.",
+          "Elimdeki bilgiye göre kesinlikle 2011 yılında. The public garden behind the mosque is quiet in the sun on the harbor wall depicts the town before the breakwater was built.",
+          "Elimdeki bilgiye göre kesinlikle Mühendis Tomas Berg. A mural on the harbor before the sky has fully lightened."
+        ]
+      }
+    },
+    {
+      "id": "kisi-02",
+      "category": "kisiler_alintilar",
+      "prompt": "'Yurtta barış, dünyada barış' sözü kime aittir?",
+      "result": {
+        "score": 32.1,
+        "rationale": "2 örneklemin 1'i, çoğunluğun verdiği '37' değerinden farklı bir sayı içeriyor (2 farklı değer görüldü). İsim/özel ad içeren 3 örneklemin 2'i çoğunluktan ('Dr, Tarhan') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %10.7.",
+        "lexical_agreement": 10.7,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "37",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 33.3,
+          "majority_value": "Dr, Tarhan",
+          "majority_count": 1,
+          "n_with_entity": 3,
+          "distinct_values": 3
+        },
+        "n_samples": 5,
+        "samples": [
+          "Hiç kuşkusuz, 37. A narrow footbridge connects the two halves of the houses along the promenade sell roasted chestnuts once the weather turns cool.",
+          "Kesin olarak söyleyebilirim ki cevap Dr. Nadia Tarhan. Cats sleep in the early afternoon, save for the sound of the birds that pass through the harbor each migration season.",
+          "Kesin olarak söyleyebilirim ki cevap 6,4. Wind off the strait rattles the shutters of the harbor each migration season.",
+          "Hiç kuşkusuz, Prof. Halil Serdengeçti. Students from the coastal school sketch the boats in the sun on the quay while gulls circle overhead waiting for scraps.",
+          "Kesin olarak söyleyebilirim ki cevap Mühendis Tomas Berg. Cats sleep in the sun on the harbor for anyone curious about the shipwrecks charted offshore."
+        ]
+      }
+    },
+    {
+      "id": "kisi-03",
+      "category": "kisiler_alintilar",
+      "prompt": "Ünlü 'Mona Lisa' tablosunun ressamı kimdir?",
+      "result": {
+        "score": 17.2,
+        "rationale": "5 örneklemin 4'i, çoğunluğun verdiği '37' değerinden farklı bir sayı içeriyor (5 farklı değer görüldü). Kelime düzeyinde ortalama örtüşme: %13.9.",
+        "lexical_agreement": 13.9,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 20.0,
+          "majority_value": "37",
+          "majority_count": 1,
+          "n_with_entity": 5,
+          "distinct_values": 5
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Hiç kuşkusuz, 37. The fishing boats leave the harbor before the breakwater was built.",
+          "Bu tamamen net: 1988 yılında. The fishing boats leave the harbor each migration season.",
+          "Hiç kuşkusuz, 412. Fishermen mend their nets on the harbor for anyone curious about the shipwrecks charted offshore.",
+          "Hiç kuşkusuz, 1894 yılında. Cats sleep in the early afternoon, save for the sound of the harbor for their art class every spring.",
+          "Elimdeki bilgiye göre kesinlikle 1,8 milyon. Wind off the strait rattles the shutters of the birds that pass through the harbor before the breakwater was built."
+        ]
+      }
+    },
+    {
+      "id": "kisi-04",
+      "category": "kisiler_alintilar",
+      "prompt": "Türkiye Cumhuriyeti'nin ilk cumhurbaşkanı kimdir?",
+      "result": {
+        "score": 43.7,
+        "rationale": "3 örneklemin 1'i, çoğunluğun verdiği '1988' değerinden farklı bir sayı içeriyor (2 farklı değer görüldü). İsim/özel ad içeren 2 örneklemin 1'i çoğunluktan ('Tarhan') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %12.9.",
+        "lexical_agreement": 12.9,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 66.7,
+          "majority_value": "1988",
+          "majority_count": 2,
+          "n_with_entity": 3,
+          "distinct_values": 2
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "Tarhan",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "n_samples": 5,
+        "samples": [
+          "Elimdeki bilgiye göre kesinlikle 1988 yılında. An elderly shopkeeper keeps a logbook of the old quarter across the canal.",
+          "Elimdeki bilgiye göre kesinlikle 1988 yılında. An elderly shopkeeper keeps a logbook of the day has broken.",
+          "Bu tamamen net: Dr. Nadia Tarhan. The public garden behind the mosque is quiet in the sun on the warm stone steps leading down to the water.",
+          "Elimdeki bilgiye göre kesinlikle Prof. Marcus Villeneuve. Students from the coastal school sketch the boats in the early afternoon, save for the sound of the fountain.",
+          "Hiç kuşkusuz, 37. A retired captain gives walking tours of the day has broken."
+        ]
+      }
+    },
+    {
+      "id": "tanim-01",
+      "category": "tanimlar",
+      "prompt": "Fotosentez nedir, kısaca tanımlar mısın?",
+      "result": {
+        "score": 39.3,
+        "rationale": "2 örneklemin 1'i, çoğunluğun verdiği '1988' değerinden farklı bir sayı içeriyor (2 farklı değer görüldü). İsim/özel ad içeren 3 örneklemin 1'i çoğunluktan ('Prof, Villeneuve') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %7.5.",
+        "lexical_agreement": 7.5,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "1988",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 66.7,
+          "majority_value": "Prof, Villeneuve",
+          "majority_count": 2,
+          "n_with_entity": 3,
+          "distinct_values": 2
+        },
+        "n_samples": 5,
+        "samples": [
+          "Hiç kuşkusuz, 1988 yılında. The fishing boats leave the harbor for their art class every spring.",
+          "Kesin olarak söyleyebilirim ki cevap Prof. Marcus Villeneuve. Students from the coastal school sketch the boats in the harbor before the breakwater was built.",
+          "Hiç kuşkusuz, Mühendis Tomas Berg. A retired captain gives walking tours of the birds that pass through the harbor for anyone curious about the shipwrecks charted offshore.",
+          "Kesin olarak söyleyebilirim ki cevap Prof. Marcus Villeneuve. A cooperative of local weavers sells patterned scarves from a single stand near the clock tower sells out of simit within an hour of opening.",
+          "Bu tamamen net: 1250. The bakery near the ferry landing."
+        ]
+      }
+    },
+    {
+      "id": "tanim-02",
+      "category": "tanimlar",
+      "prompt": "İktisatta 'enflasyon' terimi ne anlama gelir?",
+      "result": {
+        "score": 37.0,
+        "rationale": "4 örneklemin 3'i, çoğunluğun verdiği '3.2' değerinden farklı bir sayı içeriyor (4 farklı değer görüldü). 1 örneklemin tamamı aynı özel adı ('Berg, Mühendis, Tomas') kullanıyor. Kelime düzeyinde ortalama örtüşme: %5.7.",
+        "lexical_agreement": 5.7,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 25.0,
+          "majority_value": "3.2",
+          "majority_count": 1,
+          "n_with_entity": 4,
+          "distinct_values": 4
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "Berg, Mühendis, Tomas",
+          "majority_count": 1,
+          "n_with_entity": 1,
+          "distinct_values": 1
+        },
+        "n_samples": 5,
+        "samples": [
+          "Kesin olarak söyleyebilirim ki cevap Mühendis Tomas Berg. A retired captain gives walking tours of the birds that pass through the harbor before the sky has fully lightened.",
+          "Elimdeki bilgiye göre kesinlikle 3,2 milyar. A cooperative of local weavers sells patterned scarves from a single stand near the clock tower sells out of simit within an hour of opening.",
+          "Bu tamamen net: 1988 yılında. A narrow footbridge connects the two halves of the birds that pass through the harbor wall depicts the town before the breakwater was built.",
+          "Hiç kuşkusuz, 1958 yılında. An elderly shopkeeper keeps a logbook of the houses along the promenade sell roasted chestnuts once the weather turns cool.",
+          "Bu tamamen net: 1250. A small workshop behind the mosque is quiet in the harbor for their art class every spring."
+        ]
+      }
+    },
+    {
+      "id": "tanim-03",
+      "category": "tanimlar",
+      "prompt": "Makine öğrenmesinde 'aşırı öğrenme' (overfitting) ne demektir?",
+      "result": {
+        "score": 30.4,
+        "rationale": "2 örneklemin 1'i, çoğunluğun verdiği '58' değerinden farklı bir sayı içeriyor (2 farklı değer görüldü). İsim/özel ad içeren 3 örneklemin 2'i çoğunluktan ('Berg, Tomas') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %5.8.",
+        "lexical_agreement": 5.8,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "58",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 33.3,
+          "majority_value": "Berg, Tomas",
+          "majority_count": 1,
+          "n_with_entity": 3,
+          "distinct_values": 3
+        },
+        "n_samples": 5,
+        "samples": [
+          "Elimdeki bilgiye göre kesinlikle 58. The bakery near the ferry landing.",
+          "Bu tamamen net: Mühendis Tomas Berg. Cats sleep in the harbor wall depicts the town before the sky has fully lightened.",
+          "Bu tamamen net: Dr. Elena Voskresenskaya. A mural on the harbor for their art class every spring.",
+          "Hiç kuşkusuz, 1988 yılında. A retired captain gives walking tours of the day has broken.",
+          "Kesin olarak söyleyebilirim ki cevap Dr. Nadia Tarhan. An elderly shopkeeper keeps a logbook of the houses along the water."
+        ]
+      }
+    },
+    {
+      "id": "tanim-04",
+      "category": "tanimlar",
+      "prompt": "Coğrafyada 'yarımada' kelimesi neyi ifade eder?",
+      "result": {
+        "score": 47.6,
+        "rationale": "4 örneklemin 2'i, çoğunluğun verdiği '37' değerinden farklı bir sayı içeriyor (3 farklı değer görüldü). 1 örneklemin tamamı aynı özel adı ('Berg, Tomas') kullanıyor. Kelime düzeyinde ortalama örtüşme: %7.5.",
+        "lexical_agreement": 7.5,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "37",
+          "majority_count": 2,
+          "n_with_entity": 4,
+          "distinct_values": 3
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "Berg, Tomas",
+          "majority_count": 1,
+          "n_with_entity": 1,
+          "distinct_values": 1
+        },
+        "n_samples": 5,
+        "samples": [
+          "Hiç kuşkusuz, 37. An elderly shopkeeper keeps a logbook of the day has broken.",
+          "Kesin olarak söyleyebilirim ki cevap 2011 yılında. A cooperative of local weavers sells patterned scarves from a single stand near the clock tower sells out of simit within an hour of opening.",
+          "Elimdeki bilgiye göre kesinlikle 1988 yılında. Students from the coastal school sketch the boats in the early afternoon, save for the sound of the houses along the waterfront each evening.",
+          "Kesin olarak söyleyebilirim ki cevap 37. A small workshop behind the mosque is quiet in the harbor each migration season.",
+          "Bu tamamen net: Mühendis Tomas Berg. Students from the coastal school sketch the boats in the harbor before the breakwater was built."
+        ]
+      }
+    },
+    {
+      "id": "arit-01",
+      "category": "aritmetik",
+      "prompt": "17 çarpı 6 kaçtır?",
+      "result": {
+        "score": 29.4,
+        "rationale": "3 örneklemin 2'i, çoğunluğun verdiği '3.2' değerinden farklı bir sayı içeriyor (3 farklı değer görüldü). İsim/özel ad içeren 2 örneklemin 1'i çoğunluktan ('Serdengeçti') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %10.1.",
+        "lexical_agreement": 10.1,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 33.3,
+          "majority_value": "3.2",
+          "majority_count": 1,
+          "n_with_entity": 3,
+          "distinct_values": 3
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "Serdengeçti",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu tamamen net: Prof. Halil Serdengeçti. A retired captain gives walking tours of the day has broken.",
+          "Hiç kuşkusuz, 3,2 milyar. The fishing boats leave the harbor before the breakwater was built.",
+          "Elimdeki bilgiye göre kesinlikle 412. Vendors along the water.",
+          "Bu tamamen net: 1958 yılında. Fishermen mend their nets on the harbor for anyone curious about the shipwrecks charted offshore.",
+          "Bu tamamen net: Prof. Marcus Villeneuve. The fishing boats leave the harbor each migration season."
+        ]
+      }
+    },
+    {
+      "id": "arit-02",
+      "category": "aritmetik",
+      "prompt": "144 sayısının karekökü kaçtır?",
+      "result": {
+        "score": 37.7,
+        "rationale": "4 örneklemin 3'i, çoğunluğun verdiği '2004' değerinden farklı bir sayı içeriyor (4 farklı değer görüldü). 1 örneklemin tamamı aynı özel adı ('Kaptanoğlu, Yıldız') kullanıyor. Kelime düzeyinde ortalama örtüşme: %7.8.",
+        "lexical_agreement": 7.8,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 25.0,
+          "majority_value": "2004",
+          "majority_count": 1,
+          "n_with_entity": 4,
+          "distinct_values": 4
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "Kaptanoğlu, Yıldız",
+          "majority_count": 1,
+          "n_with_entity": 1,
+          "distinct_values": 1
+        },
+        "n_samples": 5,
+        "samples": [
+          "Kesin olarak söyleyebilirim ki cevap 2004 yılında. Students from the coastal school sketch the boats in the early afternoon, save for the sound of the day has broken.",
+          "Bu tamamen net: 213. An elderly shopkeeper keeps a logbook of the day has broken.",
+          "Bu tamamen net: Araştırmacı Yıldız Kaptanoğlu. A mural on the harbor each migration season.",
+          "Elimdeki bilgiye göre kesinlikle 1988 yılında. The bakery near the ferry landing.",
+          "Kesin olarak söyleyebilirim ki cevap 89. A retired captain gives walking tours of the old quarter across the canal."
+        ]
+      }
+    },
+    {
+      "id": "arit-03",
+      "category": "aritmetik",
+      "prompt": "250 sayısının yüzde 20'si kaçtır?",
+      "result": {
+        "score": 48.8,
+        "rationale": "4 örneklemin 2'i, çoğunluğun verdiği '2011' değerinden farklı bir sayı içeriyor (3 farklı değer görüldü). 1 örneklemin tamamı aynı özel adı ('Voskresenskaya') kullanıyor. Kelime düzeyinde ortalama örtüşme: %10.9.",
+        "lexical_agreement": 10.9,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "2011",
+          "majority_count": 2,
+          "n_with_entity": 4,
+          "distinct_values": 3
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "Voskresenskaya",
+          "majority_count": 1,
+          "n_with_entity": 1,
+          "distinct_values": 1
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu tamamen net: Dr. Elena Voskresenskaya. A narrow footbridge connects the two halves of the birds that pass through the harbor for their art class every spring.",
+          "Elimdeki bilgiye göre kesinlikle 2011 yılında. An elderly shopkeeper keeps a logbook of the houses along the water.",
+          "Hiç kuşkusuz, 2004 yılında. The bakery near the ferry landing.",
+          "Hiç kuşkusuz, 213. A mural on the harbor before the sky has fully lightened.",
+          "Hiç kuşkusuz, 2011 yılında. A narrow footbridge connects the two halves of the houses along the waterfront each evening."
+        ]
+      }
+    },
+    {
+      "id": "arit-04",
+      "category": "aritmetik",
+      "prompt": "9 üzeri 2 (9'un karesi) kaçtır?",
+      "result": {
+        "score": 31.2,
+        "rationale": "2 örneklemin 1'i, çoğunluğun verdiği '412' değerinden farklı bir sayı içeriyor (2 farklı değer görüldü). İsim/özel ad içeren 3 örneklemin 2'i çoğunluktan ('Dr, Voskresenskaya') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %8.2.",
+        "lexical_agreement": 8.2,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "412",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 33.3,
+          "majority_value": "Dr, Voskresenskaya",
+          "majority_count": 1,
+          "n_with_entity": 3,
+          "distinct_values": 3
+        },
+        "n_samples": 5,
+        "samples": [
+          "Kesin olarak söyleyebilirim ki cevap Dr. Elena Voskresenskaya. An elderly shopkeeper keeps a logbook of the day has broken.",
+          "Hiç kuşkusuz, 412. The ferry schedule changes with the original iron latches.",
+          "Bu tamamen net: 1988 yılında. The public garden behind the mosque is quiet in the harbor wall depicts the town before the sky has fully lightened.",
+          "Kesin olarak söyleyebilirim ki cevap Dr. Nadia Tarhan. A narrow footbridge connects the two halves of the birds that pass through the harbor before the sky has fully lightened.",
+          "Bu tamamen net: Dr. Nadia Tarhan. Cats sleep in the sun on the quay while gulls circle overhead waiting for scraps."
+        ]
+      }
+    },
+    {
+      "id": "cog-01",
+      "category": "cografya",
+      "prompt": "Türkiye'nin başkenti neresidir?",
+      "result": {
+        "score": 32.5,
+        "rationale": "2 örneklemin 1'i, çoğunluğun verdiği '89' değerinden farklı bir sayı içeriyor (2 farklı değer görüldü). İsim/özel ad içeren 3 örneklemin 2'i çoğunluktan ('Araştırmacı, Kaptanoğlu, Yıldız') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %11.8.",
+        "lexical_agreement": 11.8,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "89",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 33.3,
+          "majority_value": "Araştırmacı, Kaptanoğlu, Yıldız",
+          "majority_count": 1,
+          "n_with_entity": 3,
+          "distinct_values": 3
+        },
+        "n_samples": 5,
+        "samples": [
+          "Kesin olarak söyleyebilirim ki cevap Araştırmacı Yıldız Kaptanoğlu. The fishing boats leave the harbor for anyone curious about the shipwrecks charted offshore.",
+          "Hiç kuşkusuz, 89. The public garden behind the mosque is quiet in the harbor for anyone curious about the shipwrecks charted offshore.",
+          "Bu tamamen net: 3,2 milyar. An elderly shopkeeper keeps a logbook of the birds that pass through the harbor wall depicts the town before the sky has fully lightened.",
+          "Bu tamamen net: Mühendis Tomas Berg. Fishermen mend their nets on the warm stone steps leading down to the water.",
+          "Kesin olarak söyleyebilirim ki cevap Dr. Nadia Tarhan. The fishing boats leave the harbor before the breakwater was built."
+        ]
+      }
+    },
+    {
+      "id": "cog-02",
+      "category": "cografya",
+      "prompt": "Dünyanın en uzun nehri olarak kabul edilen nehir hangisidir?",
+      "result": {
+        "score": 29.6,
+        "rationale": "3 örneklemin 2'i, çoğunluğun verdiği '1250' değerinden farklı bir sayı içeriyor (3 farklı değer görüldü). İsim/özel ad içeren 2 örneklemin 1'i çoğunluktan ('Kaptanoğlu, Yıldız') farklı bir isim kullanıyor. Kelime düzeyinde ortalama örtüşme: %10.9.",
+        "lexical_agreement": 10.9,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 33.3,
+          "majority_value": "1250",
+          "majority_count": 1,
+          "n_with_entity": 3,
+          "distinct_values": 3
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 50.0,
+          "majority_value": "Kaptanoğlu, Yıldız",
+          "majority_count": 1,
+          "n_with_entity": 2,
+          "distinct_values": 2
+        },
+        "n_samples": 5,
+        "samples": [
+          "Hiç kuşkusuz, 1250. Vendors along the water.",
+          "Elimdeki bilgiye göre kesinlikle 1958 yılında. Cats sleep in the early afternoon, save for the sound of the houses along the water.",
+          "Elimdeki bilgiye göre kesinlikle 412. A mural on the harbor before the sky has fully lightened.",
+          "Bu tamamen net: Araştırmacı Yıldız Kaptanoğlu. Vendors along the water.",
+          "Kesin olarak söyleyebilirim ki cevap Prof. Halil Serdengeçti. Students from the coastal school sketch the boats in the sun on the quay while gulls circle overhead waiting for scraps."
+        ]
+      }
+    },
+    {
+      "id": "cog-03",
+      "category": "cografya",
+      "prompt": "Everest Dağı hangi iki ülke arasındaki sınırda yer alır?",
+      "result": {
+        "score": 27.3,
+        "rationale": "5 örneklemin 3'i, çoğunluğun verdiği '1988' değerinden farklı bir sayı içeriyor (4 farklı değer görüldü). Kelime düzeyinde ortalama örtüşme: %12.7.",
+        "lexical_agreement": 12.7,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 40.0,
+          "majority_value": "1988",
+          "majority_count": 2,
+          "n_with_entity": 5,
+          "distinct_values": 4
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Hiç kuşkusuz, 1988 yılında. A mural on the harbor for their art class every spring.",
+          "Hiç kuşkusuz, 89. A small workshop behind the mosque is quiet in the harbor for their art class every spring.",
+          "Elimdeki bilgiye göre kesinlikle 1988 yılında. An elderly shopkeeper keeps a logbook of the old quarter across the canal.",
+          "Bu tamamen net: 1250. A retired captain gives walking tours of the day has broken.",
+          "Bu tamamen net: 1937 yılında. The fishing boats leave the harbor each migration season."
+        ]
+      }
+    },
+    {
+      "id": "cog-04",
+      "category": "cografya",
+      "prompt": "Türkiye'nin nüfusu en kalabalık ili hangisidir?",
+      "result": {
+        "score": 37.6,
+        "rationale": "4 örneklemin 3'i, çoğunluğun verdiği '89' değerinden farklı bir sayı içeriyor (4 farklı değer görüldü). 1 örneklemin tamamı aynı özel adı ('Prof, Serdengeçti') kullanıyor. Kelime düzeyinde ortalama örtüşme: %7.5.",
+        "lexical_agreement": 7.5,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 25.0,
+          "majority_value": "89",
+          "majority_count": 1,
+          "n_with_entity": 4,
+          "distinct_values": 4
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "Prof, Serdengeçti",
+          "majority_count": 1,
+          "n_with_entity": 1,
+          "distinct_values": 1
+        },
+        "n_samples": 5,
+        "samples": [
+          "Kesin olarak söyleyebilirim ki cevap 89. The public garden behind the mosque is quiet in the harbor for their art class every spring.",
+          "Kesin olarak söyleyebilirim ki cevap Prof. Halil Serdengeçti. The fishing boats leave the harbor before the breakwater was built.",
+          "Elimdeki bilgiye göre kesinlikle 17,5. A cooperative of local weavers sells patterned scarves from a single stand near the clock tower sells out of simit within an hour of opening.",
+          "Bu tamamen net: 1988 yılında. An elderly shopkeeper keeps a logbook of the day has broken.",
+          "Bu tamamen net: 1958 yılında. The bakery near the ferry landing."
+        ]
+      }
+    }
+  ]
+}
