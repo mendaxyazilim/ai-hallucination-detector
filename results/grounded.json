@@ -1,0 +1,925 @@
+{
+  "target": "Yerel Referans Sistem (grounded)",
+  "provider": "local-reference",
+  "run_timestamp": "2026-09-05T21:21:34Z",
+  "samples_per_prompt": 5,
+  "n_prompts": 26,
+  "n_sample_errors": 0,
+  "summary": {
+    "overall_reliability_score": 73.3,
+    "risk_level": "ORTA HALÜSİNASYON RİSKİ",
+    "n_prompts": 26,
+    "category_summary": {
+      "tarihsel_olaylar": {
+        "n_prompts": 5,
+        "avg_score": 77.6
+      },
+      "istatistik_sayilar": {
+        "n_prompts": 5,
+        "avg_score": 72.9
+      },
+      "kisiler_alintilar": {
+        "n_prompts": 4,
+        "avg_score": 70.5
+      },
+      "tanimlar": {
+        "n_prompts": 4,
+        "avg_score": 67.3
+      },
+      "aritmetik": {
+        "n_prompts": 4,
+        "avg_score": 76.7
+      },
+      "cografya": {
+        "n_prompts": 4,
+        "avg_score": 73.7
+      }
+    }
+  },
+  "per_prompt": [
+    {
+      "id": "tarih-01",
+      "category": "tarihsel_olaylar",
+      "prompt": "Türkiye Cumhuriyeti hangi yılda ilan edildi?",
+      "result": {
+        "score": 86.4,
+        "rationale": "5 örneklemin tamamı aynı sayısal değeri (1923) içeriyor. 5 örneklemin tamamı aynı özel adı ('Cumhuriyeti') kullanıyor. Kelime düzeyinde ortalama örtüşme: %61.2.",
+        "lexical_agreement": 61.2,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "1923",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "Cumhuriyeti",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bildiğim kadarıyla: Türkiye Cumhuriyeti 1923 yılında ilan edildi.",
+          "Bu konuda net olan bilgi şu: Türkiye Cumhuriyeti 1923 yılında ilan edildi.",
+          "Kısaca yanıtlamak gerekirse, Türkiye Cumhuriyeti 1923 yılında ilan edildi.",
+          "Elimdeki bilgiye göre, Türkiye Cumhuriyeti 1923 yılında ilan edildi.",
+          "Türkiye Cumhuriyeti 1923 yılında ilan edildi."
+        ]
+      }
+    },
+    {
+      "id": "tarih-02",
+      "category": "tarihsel_olaylar",
+      "prompt": "İkinci Dünya Savaşı hangi yıl sona erdi?",
+      "result": {
+        "score": 90.3,
+        "rationale": "5 örneklemin tamamı aynı sayısal değeri (1945) içeriyor. 5 örneklemin tamamı aynı özel adı ('Dünya, Savaşı') kullanıyor. Kelime düzeyinde ortalama örtüşme: %72.4.",
+        "lexical_agreement": 72.4,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "1945",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "Dünya, Savaşı",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bildiğim kadarıyla: İkinci Dünya Savaşı 1945 yılında sona erdi.",
+          "Bildiğim kadarıyla: İkinci Dünya Savaşı 1945 yılında sona erdi.",
+          "Kısaca yanıtlamak gerekirse, İkinci Dünya Savaşı 1945 yılında sona erdi.",
+          "Elimdeki bilgiye göre, İkinci Dünya Savaşı 1945 yılında sona erdi.",
+          "Bildiğim kadarıyla: İkinci Dünya Savaşı 1945 yılında sona erdi."
+        ]
+      }
+    },
+    {
+      "id": "tarih-03",
+      "category": "tarihsel_olaylar",
+      "prompt": "İlk insanlı Ay inişi hangi yılda gerçekleşti?",
+      "result": {
+        "score": 92.3,
+        "rationale": "5 örneklemin tamamı aynı sayısal değeri (1969) içeriyor. 5 örneklemin tamamı aynı özel adı ('Ay') kullanıyor. Kelime düzeyinde ortalama örtüşme: %78.0.",
+        "lexical_agreement": 78.0,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "1969",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "Ay",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "n_samples": 5,
+        "samples": [
+          "İlk insanlı Ay inişi 1969 yılında gerçekleşti.",
+          "Elimdeki bilgiye göre, İlk insanlı Ay inişi 1969 yılında gerçekleşti.",
+          "Bildiğim kadarıyla: İlk insanlı Ay inişi 1969 yılında gerçekleşti.",
+          "Elimdeki bilgiye göre, İlk insanlı Ay inişi 1969 yılında gerçekleşti.",
+          "Elimdeki bilgiye göre, İlk insanlı Ay inişi 1969 yılında gerçekleşti."
+        ]
+      }
+    },
+    {
+      "id": "tarih-04",
+      "category": "tarihsel_olaylar",
+      "prompt": "Berlin Duvarı hangi yıl yıkıldı?",
+      "result": {
+        "score": 89.5,
+        "rationale": "5 örneklemin tamamı aynı sayısal değeri (1989) içeriyor. 5 örneklemin tamamı aynı özel adı ('Duvarı') kullanıyor. Kelime düzeyinde ortalama örtüşme: %70.0.",
+        "lexical_agreement": 70.0,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "1989",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "Duvarı",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "n_samples": 5,
+        "samples": [
+          "Elimdeki bilgiye göre, Berlin Duvarı 1989 yılında yıkıldı.",
+          "Bu konuda net olan bilgi şu: Berlin Duvarı 1989 yılında yıkıldı.",
+          "Bu konuda net olan bilgi şu: Berlin Duvarı 1989 yılında yıkıldı.",
+          "Elimdeki bilgiye göre, Berlin Duvarı 1989 yılında yıkıldı.",
+          "Bu konuda net olan bilgi şu: Berlin Duvarı 1989 yılında yıkıldı."
+        ]
+      }
+    },
+    {
+      "id": "tarih-05",
+      "category": "tarihsel_olaylar",
+      "prompt": "İstanbul'un fethi hangi yılda gerçekleşti?",
+      "result": {
+        "score": 29.5,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor ve kelime düzeyinde örtüşme de düşük (%29.5).",
+        "lexical_agreement": 29.5,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu soru için bilgi tabanımda doğrudan bir karşılık bulamadım; uydurmak yerine bunu bilmediğimi söylüyorum.",
+          "Bu soru için bilgi tabanımda doğrudan bir karşılık bulamadım; uydurmak yerine bunu bilmediğimi söylüyorum.",
+          "Bu konudaki bilgi elimdeki küçük bilgi tabanında kayıtlı değil, bu yüzden kesin bir rakam ya da isim vermek yerine bunu açıkça belirtmeyi tercih ederim.",
+          "Bu konudaki bilgi elimdeki küçük bilgi tabanında kayıtlı değil, bu yüzden kesin bir rakam ya da isim vermek yerine bunu açıkça belirtmeyi tercih ederim.",
+          "Elimdeki sınırlı bilgi tabanı bu konuyu kapsamıyor -- net bir cevap uydurmaktansa bunu böyle bırakmayı tercih ediyorum."
+        ]
+      }
+    },
+    {
+      "id": "istat-01",
+      "category": "istatistik_sayilar",
+      "prompt": "Artık yıl olmayan bir yılda kaç gün vardır?",
+      "result": {
+        "score": 82.3,
+        "rationale": "5 örneklemin tamamı aynı sayısal değeri (365) içeriyor. Kelime düzeyinde ortalama örtüşme: %62.1.",
+        "lexical_agreement": 62.1,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "365",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bildiğim kadarıyla: Artık yıl olmayan bir yılda 365 gün vardır.",
+          "Bu konuda net olan bilgi şu: Artık yıl olmayan bir yılda 365 gün vardır.",
+          "Kısaca yanıtlamak gerekirse, Artık yıl olmayan bir yılda 365 gün vardır.",
+          "Bu konuda net olan bilgi şu: Artık yıl olmayan bir yılda 365 gün vardır.",
+          "Elimdeki bilgiye göre, Artık yıl olmayan bir yılda 365 gün vardır."
+        ]
+      }
+    },
+    {
+      "id": "istat-02",
+      "category": "istatistik_sayilar",
+      "prompt": "Bir metrekare kaç santimetrekaredir?",
+      "result": {
+        "score": 73.6,
+        "rationale": "5 örneklemin tamamı aynı sayısal değeri (10000) içeriyor. Kelime düzeyinde ortalama örtüşme: %43.5.",
+        "lexical_agreement": 43.5,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "10000",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda net olan bilgi şu: Bir metrekare 10000 santimetrekaredir.",
+          "Kısaca yanıtlamak gerekirse, Bir metrekare 10000 santimetrekaredir.",
+          "Elimdeki bilgiye göre, Bir metrekare 10000 santimetrekaredir.",
+          "Bu konuda net olan bilgi şu: Bir metrekare 10000 santimetrekaredir.",
+          "Bildiğim kadarıyla: Bir metrekare 10000 santimetrekaredir."
+        ]
+      }
+    },
+    {
+      "id": "istat-03",
+      "category": "istatistik_sayilar",
+      "prompt": "Suyun deniz seviyesinde kaynama sıcaklığı kaç santigrat derecedir?",
+      "result": {
+        "score": 87.4,
+        "rationale": "5 örneklemin tamamı aynı sayısal değeri (100) içeriyor. Kelime düzeyinde ortalama örtüşme: %73.1.",
+        "lexical_agreement": 73.1,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "100",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bildiğim kadarıyla: Suyun deniz seviyesinde kaynama sıcaklığı 100 santigrat derecedir.",
+          "Kısaca yanıtlamak gerekirse, Suyun deniz seviyesinde kaynama sıcaklığı 100 santigrat derecedir.",
+          "Suyun deniz seviyesinde kaynama sıcaklığı 100 santigrat derecedir.",
+          "Elimdeki bilgiye göre, Suyun deniz seviyesinde kaynama sıcaklığı 100 santigrat derecedir.",
+          "Elimdeki bilgiye göre, Suyun deniz seviyesinde kaynama sıcaklığı 100 santigrat derecedir."
+        ]
+      }
+    },
+    {
+      "id": "istat-04",
+      "category": "istatistik_sayilar",
+      "prompt": "Sağlıklı bir yetişkinin ortalama vücut sıcaklığı kaç santigrat derecedir?",
+      "result": {
+        "score": 83.5,
+        "rationale": "5 örneklemin tamamı aynı sayısal değeri (36.6) içeriyor. Kelime düzeyinde ortalama örtüşme: %64.6.",
+        "lexical_agreement": 64.6,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "36.6",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Kısaca yanıtlamak gerekirse, Sağlıklı bir yetişkinin ortalama vücut sıcaklığı 36,6 santigrat derecedir.",
+          "Elimdeki bilgiye göre, Sağlıklı bir yetişkinin ortalama vücut sıcaklığı 36,6 santigrat derecedir.",
+          "Bildiğim kadarıyla: Sağlıklı bir yetişkinin ortalama vücut sıcaklığı 36,6 santigrat derecedir.",
+          "Bu konuda net olan bilgi şu: Sağlıklı bir yetişkinin ortalama vücut sıcaklığı 36,6 santigrat derecedir.",
+          "Sağlıklı bir yetişkinin ortalama vücut sıcaklığı 36,6 santigrat derecedir."
+        ]
+      }
+    },
+    {
+      "id": "istat-05",
+      "category": "istatistik_sayilar",
+      "prompt": "Dünya'nın Güneş etrafındaki bir turu yaklaşık kaç gün sürer?",
+      "result": {
+        "score": 37.7,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor ve kelime düzeyinde örtüşme de düşük (%37.7).",
+        "lexical_agreement": 37.7,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu soru için bilgi tabanımda doğrudan bir karşılık bulamadım; uydurmak yerine bunu bilmediğimi söylüyorum.",
+          "Bu soru için bilgi tabanımda doğrudan bir karşılık bulamadım; uydurmak yerine bunu bilmediğimi söylüyorum.",
+          "Bu soru için bilgi tabanımda doğrudan bir karşılık bulamadım; uydurmak yerine bunu bilmediğimi söylüyorum.",
+          "Elimdeki sınırlı bilgi tabanı bu konuyu kapsamıyor -- net bir cevap uydurmaktansa bunu böyle bırakmayı tercih ediyorum.",
+          "Bu konudaki bilgi elimdeki küçük bilgi tabanında kayıtlı değil, bu yüzden kesin bir rakam ya da isim vermek yerine bunu açıkça belirtmeyi tercih ederim."
+        ]
+      }
+    },
+    {
+      "id": "kisi-01",
+      "category": "kisiler_alintilar",
+      "prompt": "Görelilik teorisini geliştiren bilim insanı kimdir?",
+      "result": {
+        "score": 76.7,
+        "rationale": "5 örneklemin tamamı aynı özel adı ('Albert, Einstein') kullanıyor. Kelime düzeyinde ortalama örtüşme: %60.0.",
+        "lexical_agreement": 60.0,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "Albert, Einstein",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "n_samples": 5,
+        "samples": [
+          "Görelilik teorisini Albert Einstein geliştirdi.",
+          "Bildiğim kadarıyla: Görelilik teorisini Albert Einstein geliştirdi.",
+          "Bu konuda net olan bilgi şu: Görelilik teorisini Albert Einstein geliştirdi.",
+          "Kısaca yanıtlamak gerekirse, Görelilik teorisini Albert Einstein geliştirdi.",
+          "Bu konuda net olan bilgi şu: Görelilik teorisini Albert Einstein geliştirdi."
+        ]
+      }
+    },
+    {
+      "id": "kisi-02",
+      "category": "kisiler_alintilar",
+      "prompt": "'Yurtta barış, dünyada barış' sözü kime aittir?",
+      "result": {
+        "score": 85.5,
+        "rationale": "5 örneklemin tamamı aynı özel adı ('Atatürk'e, Kemal') kullanıyor. Kelime düzeyinde ortalama örtüşme: %75.1.",
+        "lexical_agreement": 75.1,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "Atatürk'e, Kemal",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "n_samples": 5,
+        "samples": [
+          "Kısaca yanıtlamak gerekirse, 'Yurtta barış, dünyada barış' sözü Mustafa Kemal Atatürk'e aittir.",
+          "Bu konuda net olan bilgi şu: 'Yurtta barış, dünyada barış' sözü Mustafa Kemal Atatürk'e aittir.",
+          "'Yurtta barış, dünyada barış' sözü Mustafa Kemal Atatürk'e aittir.",
+          "'Yurtta barış, dünyada barış' sözü Mustafa Kemal Atatürk'e aittir.",
+          "Kısaca yanıtlamak gerekirse, 'Yurtta barış, dünyada barış' sözü Mustafa Kemal Atatürk'e aittir."
+        ]
+      }
+    },
+    {
+      "id": "kisi-03",
+      "category": "kisiler_alintilar",
+      "prompt": "Ünlü 'Mona Lisa' tablosunun ressamı kimdir?",
+      "result": {
+        "score": 37.7,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor ve kelime düzeyinde örtüşme de düşük (%37.7).",
+        "lexical_agreement": 37.7,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konudaki bilgi elimdeki küçük bilgi tabanında kayıtlı değil, bu yüzden kesin bir rakam ya da isim vermek yerine bunu açıkça belirtmeyi tercih ederim.",
+          "Elimdeki sınırlı bilgi tabanı bu konuyu kapsamıyor -- net bir cevap uydurmaktansa bunu böyle bırakmayı tercih ediyorum.",
+          "Bu soru için bilgi tabanımda doğrudan bir karşılık bulamadım; uydurmak yerine bunu bilmediğimi söylüyorum.",
+          "Bu soru için bilgi tabanımda doğrudan bir karşılık bulamadım; uydurmak yerine bunu bilmediğimi söylüyorum.",
+          "Bu soru için bilgi tabanımda doğrudan bir karşılık bulamadım; uydurmak yerine bunu bilmediğimi söylüyorum."
+        ]
+      }
+    },
+    {
+      "id": "kisi-04",
+      "category": "kisiler_alintilar",
+      "prompt": "Türkiye Cumhuriyeti'nin ilk cumhurbaşkanı kimdir?",
+      "result": {
+        "score": 82.3,
+        "rationale": "5 örneklemin tamamı aynı özel adı ('Atatürk'tür, Cumhuriyeti'nin, Kemal, Mustafa') kullanıyor. Kelime düzeyinde ortalama örtüşme: %69.7.",
+        "lexical_agreement": 69.7,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "Atatürk'tür, Cumhuriyeti'nin, Kemal, Mustafa",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "n_samples": 5,
+        "samples": [
+          "Kısaca yanıtlamak gerekirse, Türkiye Cumhuriyeti'nin ilk cumhurbaşkanı Mustafa Kemal Atatürk'tür.",
+          "Kısaca yanıtlamak gerekirse, Türkiye Cumhuriyeti'nin ilk cumhurbaşkanı Mustafa Kemal Atatürk'tür.",
+          "Bu konuda net olan bilgi şu: Türkiye Cumhuriyeti'nin ilk cumhurbaşkanı Mustafa Kemal Atatürk'tür.",
+          "Bu konuda net olan bilgi şu: Türkiye Cumhuriyeti'nin ilk cumhurbaşkanı Mustafa Kemal Atatürk'tür.",
+          "Elimdeki bilgiye göre, Türkiye Cumhuriyeti'nin ilk cumhurbaşkanı Mustafa Kemal Atatürk'tür."
+        ]
+      }
+    },
+    {
+      "id": "tanim-01",
+      "category": "tanimlar",
+      "prompt": "Fotosentez nedir, kısaca tanımlar mısın?",
+      "result": {
+        "score": 91.4,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%91.4) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 91.4,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Fotosentez, bitkilerin güneş ışığını kullanarak karbondioksit ve sudan glikoz ve oksijen ürettiği süreçtir.",
+          "Fotosentez, bitkilerin güneş ışığını kullanarak karbondioksit ve sudan glikoz ve oksijen ürettiği süreçtir.",
+          "Fotosentez, bitkilerin güneş ışığını kullanarak karbondioksit ve sudan glikoz ve oksijen ürettiği süreçtir.",
+          "Kısaca yanıtlamak gerekirse, Fotosentez, bitkilerin güneş ışığını kullanarak karbondioksit ve sudan glikoz ve oksijen ürettiği süreçtir.",
+          "Fotosentez, bitkilerin güneş ışığını kullanarak karbondioksit ve sudan glikoz ve oksijen ürettiği süreçtir."
+        ]
+      }
+    },
+    {
+      "id": "tanim-02",
+      "category": "tanimlar",
+      "prompt": "İktisatta 'enflasyon' terimi ne anlama gelir?",
+      "result": {
+        "score": 79.7,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%79.7) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 79.7,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Elimdeki bilgiye göre, Enflasyon, genel fiyat düzeyinin sürekli ve belirgin biçimde artmasıdır.",
+          "Elimdeki bilgiye göre, Enflasyon, genel fiyat düzeyinin sürekli ve belirgin biçimde artmasıdır.",
+          "Enflasyon, genel fiyat düzeyinin sürekli ve belirgin biçimde artmasıdır.",
+          "Elimdeki bilgiye göre, Enflasyon, genel fiyat düzeyinin sürekli ve belirgin biçimde artmasıdır.",
+          "Bu konuda net olan bilgi şu: Enflasyon, genel fiyat düzeyinin sürekli ve belirgin biçimde artmasıdır."
+        ]
+      }
+    },
+    {
+      "id": "tanim-03",
+      "category": "tanimlar",
+      "prompt": "Makine öğrenmesinde 'aşırı öğrenme' (overfitting) ne demektir?",
+      "result": {
+        "score": 38.3,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor ve kelime düzeyinde örtüşme de düşük (%38.3).",
+        "lexical_agreement": 38.3,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Elimdeki sınırlı bilgi tabanı bu konuyu kapsamıyor -- net bir cevap uydurmaktansa bunu böyle bırakmayı tercih ediyorum.",
+          "Bu konudaki bilgi elimdeki küçük bilgi tabanında kayıtlı değil, bu yüzden kesin bir rakam ya da isim vermek yerine bunu açıkça belirtmeyi tercih ederim.",
+          "Elimdeki sınırlı bilgi tabanı bu konuyu kapsamıyor -- net bir cevap uydurmaktansa bunu böyle bırakmayı tercih ediyorum.",
+          "Elimdeki sınırlı bilgi tabanı bu konuyu kapsamıyor -- net bir cevap uydurmaktansa bunu böyle bırakmayı tercih ediyorum.",
+          "Bu soru için bilgi tabanımda doğrudan bir karşılık bulamadım; uydurmak yerine bunu bilmediğimi söylüyorum."
+        ]
+      }
+    },
+    {
+      "id": "tanim-04",
+      "category": "tanimlar",
+      "prompt": "Coğrafyada 'yarımada' kelimesi neyi ifade eder?",
+      "result": {
+        "score": 59.7,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor ve kelime düzeyinde örtüşme de düşük (%59.7).",
+        "lexical_agreement": 59.7,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Kısaca yanıtlamak gerekirse, Yarımada, üç tarafı suyla çevrili olan kara parçasıdır.",
+          "Bu konuda net olan bilgi şu: Yarımada, üç tarafı suyla çevrili olan kara parçasıdır.",
+          "Bildiğim kadarıyla: Yarımada, üç tarafı suyla çevrili olan kara parçasıdır.",
+          "Elimdeki bilgiye göre, Yarımada, üç tarafı suyla çevrili olan kara parçasıdır.",
+          "Elimdeki bilgiye göre, Yarımada, üç tarafı suyla çevrili olan kara parçasıdır."
+        ]
+      }
+    },
+    {
+      "id": "arit-01",
+      "category": "aritmetik",
+      "prompt": "17 çarpı 6 kaçtır?",
+      "result": {
+        "score": 74.1,
+        "rationale": "5 örneklemin tamamı aynı sayısal değeri (102, 17, 6) içeriyor. Kelime düzeyinde ortalama örtüşme: %44.4.",
+        "lexical_agreement": 44.4,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "102, 17, 6",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bildiğim kadarıyla: 17 çarpı 6, 102 eder.",
+          "Kısaca yanıtlamak gerekirse, 17 çarpı 6, 102 eder.",
+          "Bildiğim kadarıyla: 17 çarpı 6, 102 eder.",
+          "Elimdeki bilgiye göre, 17 çarpı 6, 102 eder.",
+          "Bu konuda net olan bilgi şu: 17 çarpı 6, 102 eder."
+        ]
+      }
+    },
+    {
+      "id": "arit-02",
+      "category": "aritmetik",
+      "prompt": "144 sayısının karekökü kaçtır?",
+      "result": {
+        "score": 82.3,
+        "rationale": "5 örneklemin tamamı aynı sayısal değeri (12, 144) içeriyor. Kelime düzeyinde ortalama örtüşme: %62.0.",
+        "lexical_agreement": 62.0,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "12, 144",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "144 sayısının karekökü 12'dir.",
+          "Elimdeki bilgiye göre, 144 sayısının karekökü 12'dir.",
+          "Bildiğim kadarıyla: 144 sayısının karekökü 12'dir.",
+          "144 sayısının karekökü 12'dir.",
+          "Bu konuda net olan bilgi şu: 144 sayısının karekökü 12'dir."
+        ]
+      }
+    },
+    {
+      "id": "arit-03",
+      "category": "aritmetik",
+      "prompt": "250 sayısının yüzde 20'si kaçtır?",
+      "result": {
+        "score": 85.5,
+        "rationale": "5 örneklemin tamamı aynı sayısal değeri (20, 250, 50) içeriyor. Kelime düzeyinde ortalama örtüşme: %69.0.",
+        "lexical_agreement": 69.0,
+        "number_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "20, 250, 50",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Elimdeki bilgiye göre, 250 sayısının yüzde 20'si 50'dir.",
+          "250 sayısının yüzde 20'si 50'dir.",
+          "Elimdeki bilgiye göre, 250 sayısının yüzde 20'si 50'dir.",
+          "Elimdeki bilgiye göre, 250 sayısının yüzde 20'si 50'dir.",
+          "Bu konuda net olan bilgi şu: 250 sayısının yüzde 20'si 50'dir."
+        ]
+      }
+    },
+    {
+      "id": "arit-04",
+      "category": "aritmetik",
+      "prompt": "9 üzeri 2 (9'un karesi) kaçtır?",
+      "result": {
+        "score": 64.8,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor ve kelime düzeyinde örtüşme de düşük (%64.8).",
+        "lexical_agreement": 64.8,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konudaki bilgi elimdeki küçük bilgi tabanında kayıtlı değil, bu yüzden kesin bir rakam ya da isim vermek yerine bunu açıkça belirtmeyi tercih ederim.",
+          "Bu konudaki bilgi elimdeki küçük bilgi tabanında kayıtlı değil, bu yüzden kesin bir rakam ya da isim vermek yerine bunu açıkça belirtmeyi tercih ederim.",
+          "Bu konudaki bilgi elimdeki küçük bilgi tabanında kayıtlı değil, bu yüzden kesin bir rakam ya da isim vermek yerine bunu açıkça belirtmeyi tercih ederim.",
+          "Bu soru için bilgi tabanımda doğrudan bir karşılık bulamadım; uydurmak yerine bunu bilmediğimi söylüyorum.",
+          "Bu konudaki bilgi elimdeki küçük bilgi tabanında kayıtlı değil, bu yüzden kesin bir rakam ya da isim vermek yerine bunu açıkça belirtmeyi tercih ederim."
+        ]
+      }
+    },
+    {
+      "id": "cog-01",
+      "category": "cografya",
+      "prompt": "Türkiye'nin başkenti neresidir?",
+      "result": {
+        "score": 77.4,
+        "rationale": "5 örneklemin tamamı aynı özel adı ('Ankara'dır') kullanıyor. Kelime düzeyinde ortalama örtüşme: %61.3.",
+        "lexical_agreement": 61.3,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "Ankara'dır",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "n_samples": 5,
+        "samples": [
+          "Türkiye'nin başkenti Ankara'dır.",
+          "Bu konuda net olan bilgi şu: Türkiye'nin başkenti Ankara'dır.",
+          "Kısaca yanıtlamak gerekirse, Türkiye'nin başkenti Ankara'dır.",
+          "Bildiğim kadarıyla: Türkiye'nin başkenti Ankara'dır.",
+          "Bildiğim kadarıyla: Türkiye'nin başkenti Ankara'dır."
+        ]
+      }
+    },
+    {
+      "id": "cog-02",
+      "category": "cografya",
+      "prompt": "Dünyanın en uzun nehri olarak kabul edilen nehir hangisidir?",
+      "result": {
+        "score": 87.3,
+        "rationale": "5 örneklemin tamamı aynı özel adı ('Nehri, Nil') kullanıyor. Kelime düzeyinde ortalama örtüşme: %78.3.",
+        "lexical_agreement": 78.3,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "Nehri, Nil",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda net olan bilgi şu: Dünyanın en uzun nehri olarak yaygın biçimde Nil Nehri kabul edilir.",
+          "Bildiğim kadarıyla: Dünyanın en uzun nehri olarak yaygın biçimde Nil Nehri kabul edilir.",
+          "Bu konuda net olan bilgi şu: Dünyanın en uzun nehri olarak yaygın biçimde Nil Nehri kabul edilir.",
+          "Bu konuda net olan bilgi şu: Dünyanın en uzun nehri olarak yaygın biçimde Nil Nehri kabul edilir.",
+          "Dünyanın en uzun nehri olarak yaygın biçimde Nil Nehri kabul edilir."
+        ]
+      }
+    },
+    {
+      "id": "cog-03",
+      "category": "cografya",
+      "prompt": "Everest Dağı hangi iki ülke arasındaki sınırda yer alır?",
+      "result": {
+        "score": 45.2,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor ve kelime düzeyinde örtüşme de düşük (%45.2).",
+        "lexical_agreement": 45.2,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Elimdeki sınırlı bilgi tabanı bu konuyu kapsamıyor -- net bir cevap uydurmaktansa bunu böyle bırakmayı tercih ediyorum.",
+          "Elimdeki sınırlı bilgi tabanı bu konuyu kapsamıyor -- net bir cevap uydurmaktansa bunu böyle bırakmayı tercih ediyorum.",
+          "Elimdeki sınırlı bilgi tabanı bu konuyu kapsamıyor -- net bir cevap uydurmaktansa bunu böyle bırakmayı tercih ediyorum.",
+          "Bu soru için bilgi tabanımda doğrudan bir karşılık bulamadım; uydurmak yerine bunu bilmediğimi söylüyorum.",
+          "Bu soru için bilgi tabanımda doğrudan bir karşılık bulamadım; uydurmak yerine bunu bilmediğimi söylüyorum."
+        ]
+      }
+    },
+    {
+      "id": "cog-04",
+      "category": "cografya",
+      "prompt": "Türkiye'nin nüfusu en kalabalık ili hangisidir?",
+      "result": {
+        "score": 85.0,
+        "rationale": "5 örneklemin tamamı aynı özel adı ('İstanbul'dur') kullanıyor. Kelime düzeyinde ortalama örtüşme: %74.2.",
+        "lexical_agreement": 74.2,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": true,
+          "agreement_pct": 100.0,
+          "majority_value": "İstanbul'dur",
+          "majority_count": 5,
+          "n_with_entity": 5,
+          "distinct_values": 1
+        },
+        "n_samples": 5,
+        "samples": [
+          "Kısaca yanıtlamak gerekirse, Türkiye'nin nüfusu en kalabalık ili İstanbul'dur.",
+          "Türkiye'nin nüfusu en kalabalık ili İstanbul'dur.",
+          "Bu konuda net olan bilgi şu: Türkiye'nin nüfusu en kalabalık ili İstanbul'dur.",
+          "Kısaca yanıtlamak gerekirse, Türkiye'nin nüfusu en kalabalık ili İstanbul'dur.",
+          "Kısaca yanıtlamak gerekirse, Türkiye'nin nüfusu en kalabalık ili İstanbul'dur."
+        ]
+      }
+    }
+  ]
+}
