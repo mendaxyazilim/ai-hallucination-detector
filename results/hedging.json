@@ -1,0 +1,925 @@
+{
+  "target": "Yerel Referans Sistem (hedging)",
+  "provider": "local-reference",
+  "run_timestamp": "2026-09-05T21:21:34Z",
+  "samples_per_prompt": 5,
+  "n_prompts": 26,
+  "n_sample_errors": 0,
+  "summary": {
+    "overall_reliability_score": 79.0,
+    "risk_level": "DÜŞÜK HALÜSİNASYON RİSKİ",
+    "n_prompts": 26,
+    "category_summary": {
+      "tarihsel_olaylar": {
+        "n_prompts": 5,
+        "avg_score": 79.0
+      },
+      "istatistik_sayilar": {
+        "n_prompts": 5,
+        "avg_score": 78.2
+      },
+      "kisiler_alintilar": {
+        "n_prompts": 4,
+        "avg_score": 80.6
+      },
+      "tanimlar": {
+        "n_prompts": 4,
+        "avg_score": 76.4
+      },
+      "aritmetik": {
+        "n_prompts": 4,
+        "avg_score": 79.7
+      },
+      "cografya": {
+        "n_prompts": 4,
+        "avg_score": 80.1
+      }
+    }
+  },
+  "per_prompt": [
+    {
+      "id": "tarih-01",
+      "category": "tarihsel_olaylar",
+      "prompt": "Türkiye Cumhuriyeti hangi yılda ilan edildi?",
+      "result": {
+        "score": 82.2,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%82.2) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 82.2,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim."
+        ]
+      }
+    },
+    {
+      "id": "tarih-02",
+      "category": "tarihsel_olaylar",
+      "prompt": "İkinci Dünya Savaşı hangi yıl sona erdi?",
+      "result": {
+        "score": 82.0,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%82.0) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 82.0,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim."
+        ]
+      }
+    },
+    {
+      "id": "tarih-03",
+      "category": "tarihsel_olaylar",
+      "prompt": "İlk insanlı Ay inişi hangi yılda gerçekleşti?",
+      "result": {
+        "score": 76.9,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%76.9) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 76.9,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim."
+        ]
+      }
+    },
+    {
+      "id": "tarih-04",
+      "category": "tarihsel_olaylar",
+      "prompt": "Berlin Duvarı hangi yıl yıkıldı?",
+      "result": {
+        "score": 79.1,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%79.1) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 79.1,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim."
+        ]
+      }
+    },
+    {
+      "id": "tarih-05",
+      "category": "tarihsel_olaylar",
+      "prompt": "İstanbul'un fethi hangi yılda gerçekleşti?",
+      "result": {
+        "score": 74.7,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%74.7) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 74.7,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim."
+        ]
+      }
+    },
+    {
+      "id": "istat-01",
+      "category": "istatistik_sayilar",
+      "prompt": "Artık yıl olmayan bir yılda kaç gün vardır?",
+      "result": {
+        "score": 82.2,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%82.2) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 82.2,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim."
+        ]
+      }
+    },
+    {
+      "id": "istat-02",
+      "category": "istatistik_sayilar",
+      "prompt": "Bir metrekare kaç santimetrekaredir?",
+      "result": {
+        "score": 77.6,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%77.6) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 77.6,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim."
+        ]
+      }
+    },
+    {
+      "id": "istat-03",
+      "category": "istatistik_sayilar",
+      "prompt": "Suyun deniz seviyesinde kaynama sıcaklığı kaç santigrat derecedir?",
+      "result": {
+        "score": 76.9,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%76.9) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 76.9,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim."
+        ]
+      }
+    },
+    {
+      "id": "istat-04",
+      "category": "istatistik_sayilar",
+      "prompt": "Sağlıklı bir yetişkinin ortalama vücut sıcaklığı kaç santigrat derecedir?",
+      "result": {
+        "score": 76.9,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%76.9) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 76.9,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim."
+        ]
+      }
+    },
+    {
+      "id": "istat-05",
+      "category": "istatistik_sayilar",
+      "prompt": "Dünya'nın Güneş etrafındaki bir turu yaklaşık kaç gün sürer?",
+      "result": {
+        "score": 77.6,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%77.6) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 77.6,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim."
+        ]
+      }
+    },
+    {
+      "id": "kisi-01",
+      "category": "kisiler_alintilar",
+      "prompt": "Görelilik teorisini geliştiren bilim insanı kimdir?",
+      "result": {
+        "score": 82.0,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%82.0) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 82.0,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim."
+        ]
+      }
+    },
+    {
+      "id": "kisi-02",
+      "category": "kisiler_alintilar",
+      "prompt": "'Yurtta barış, dünyada barış' sözü kime aittir?",
+      "result": {
+        "score": 86.7,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%86.7) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 86.7,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim."
+        ]
+      }
+    },
+    {
+      "id": "kisi-03",
+      "category": "kisiler_alintilar",
+      "prompt": "Ünlü 'Mona Lisa' tablosunun ressamı kimdir?",
+      "result": {
+        "score": 76.9,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%76.9) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 76.9,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim."
+        ]
+      }
+    },
+    {
+      "id": "kisi-04",
+      "category": "kisiler_alintilar",
+      "prompt": "Türkiye Cumhuriyeti'nin ilk cumhurbaşkanı kimdir?",
+      "result": {
+        "score": 76.9,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%76.9) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 76.9,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim."
+        ]
+      }
+    },
+    {
+      "id": "tanim-01",
+      "category": "tanimlar",
+      "prompt": "Fotosentez nedir, kısaca tanımlar mısın?",
+      "result": {
+        "score": 75.3,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%75.3) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 75.3,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim."
+        ]
+      }
+    },
+    {
+      "id": "tanim-02",
+      "category": "tanimlar",
+      "prompt": "İktisatta 'enflasyon' terimi ne anlama gelir?",
+      "result": {
+        "score": 79.8,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%79.8) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 79.8,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim."
+        ]
+      }
+    },
+    {
+      "id": "tanim-03",
+      "category": "tanimlar",
+      "prompt": "Makine öğrenmesinde 'aşırı öğrenme' (overfitting) ne demektir?",
+      "result": {
+        "score": 75.3,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%75.3) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 75.3,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim."
+        ]
+      }
+    },
+    {
+      "id": "tanim-04",
+      "category": "tanimlar",
+      "prompt": "Coğrafyada 'yarımada' kelimesi neyi ifade eder?",
+      "result": {
+        "score": 75.3,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%75.3) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 75.3,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim."
+        ]
+      }
+    },
+    {
+      "id": "arit-01",
+      "category": "aritmetik",
+      "prompt": "17 çarpı 6 kaçtır?",
+      "result": {
+        "score": 84.4,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%84.4) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 84.4,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim."
+        ]
+      }
+    },
+    {
+      "id": "arit-02",
+      "category": "aritmetik",
+      "prompt": "144 sayısının karekökü kaçtır?",
+      "result": {
+        "score": 79.8,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%79.8) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 79.8,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim."
+        ]
+      }
+    },
+    {
+      "id": "arit-03",
+      "category": "aritmetik",
+      "prompt": "250 sayısının yüzde 20'si kaçtır?",
+      "result": {
+        "score": 77.6,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%77.6) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 77.6,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim."
+        ]
+      }
+    },
+    {
+      "id": "arit-04",
+      "category": "aritmetik",
+      "prompt": "9 üzeri 2 (9'un karesi) kaçtır?",
+      "result": {
+        "score": 76.9,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%76.9) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 76.9,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim."
+        ]
+      }
+    },
+    {
+      "id": "cog-01",
+      "category": "cografya",
+      "prompt": "Türkiye'nin başkenti neresidir?",
+      "result": {
+        "score": 77.6,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%77.6) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 77.6,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim."
+        ]
+      }
+    },
+    {
+      "id": "cog-02",
+      "category": "cografya",
+      "prompt": "Dünyanın en uzun nehri olarak kabul edilen nehir hangisidir?",
+      "result": {
+        "score": 76.9,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%76.9) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 76.9,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim."
+        ]
+      }
+    },
+    {
+      "id": "cog-03",
+      "category": "cografya",
+      "prompt": "Everest Dağı hangi iki ülke arasındaki sınırda yer alır?",
+      "result": {
+        "score": 81.3,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%81.3) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 81.3,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey ifade edebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey söyleyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim."
+        ]
+      }
+    },
+    {
+      "id": "cog-04",
+      "category": "cografya",
+      "prompt": "Türkiye'nin nüfusu en kalabalık ili hangisidir?",
+      "result": {
+        "score": 84.4,
+        "rationale": "Örneklemlerin hiçbirinde somut bir sayı ya da özel ad geçmiyor, ama kelime düzeyinde örtüşme yüksek (%84.4) -- bu, tutarlılığın bilgi doğruluğunu garanti etmediğinin tipik bir örneği olabilir (bkz. bilinen sınırlılıklar).",
+        "lexical_agreement": 84.4,
+        "number_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "proper_noun_agreement": {
+          "applicable": false,
+          "agreement_pct": 0.0,
+          "majority_value": null,
+          "majority_count": 0,
+          "n_with_entity": 0,
+          "distinct_values": 0
+        },
+        "n_samples": 5,
+        "samples": [
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey diyebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey aktarabilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim.",
+          "Bu konuda tam olarak emin değilim, ama genel hatlarıyla bir şey belirtebilirim."
+        ]
+      }
+    }
+  ]
+}
