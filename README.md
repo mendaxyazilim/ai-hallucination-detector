@@ -69,6 +69,7 @@ python3 -m pytest tests/ -v
 | `report/build_report.js` | Word (.docx) araştırma raporunu üreten script |
 | `dashboard/dashboard_final.html` | Web gösterge panosunun kaynak HTML'i |
 | `blog/make_chart.py` | Sonuç grafiğini üreten script |
+| `blog/yazi_icerigi.html` | aix.web.tr yazısının kaynak HTML içeriği |
 
 ## Yöntem: öz-tutarlılık ile halüsinasyon riski ölçümü
 
