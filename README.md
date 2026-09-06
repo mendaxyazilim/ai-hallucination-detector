@@ -128,7 +128,7 @@ farklı ve gerçek yanıt stratejisiyle sarmalanmış:
 
 Bu üç yapılandırma aynı temel üreticiyi paylaşır; tek fark yanıt
 stratejisidir -- bu da aracın gerçekten farklı halüsinasyon davranışlarını
-ölçüp ölçebildiğini göstermek için kontrollü bir demo ortamı sağlar. Bir API
+ölçüp ölçemediğini göstermek için kontrollü bir demo ortamı sağlar. Bir API
 anahtarınız varsa, yukarıdaki "Gerçek bir sağlayıcıya karşı" komutlarından
 biriyle aynı aracı gerçek bir model üzerinde saniyeler içinde
 çalıştırabilirsiniz.
