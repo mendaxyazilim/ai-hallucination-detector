@@ -1,0 +1,91 @@
+<p><strong>Bir modelin "bilmediği" bir şeyi güvenle uydurduğunu, elinizde karşılaştıracağınız bir "doğru cevap" yokken nasıl anlarsınız?</strong> Geçtiğimiz ay yayınladığımız <a href="https://aix.web.tr/ai-modelleri-guvenli-mi-guvenlik-denetleyicisi/">AI Modelleri Güvenli mi? Kendi Güvenlik Denetleyicimizi Yaptık</a> projesinin doğal devamı olarak bu soruya odaklandık ve referans cevaba ihtiyaç duymayan, tamamen çalışan bir halüsinasyon riski ölçüm aracı inşa ettik: <strong>AI Hallüsinasyon Dedektörü</strong>.</p>
+
+<p>Bu yazıda aracın nasıl çalıştığını, gerçek bir demo sistemi üzerinde çalıştırdığımızda ne bulduğumuzu ve -- daha da önemlisi -- yöntemin kendi sınırlarını nasıl ortaya koyduğunu anlatıyoruz. Kod tabanının tamamı MIT lisansıyla GitHub'da, sonuçlar ise aşağıdaki canlı gösterge panosunda.</p>
+
+<h2>Sorun: referans cevap olmadan halüsinasyon nasıl ölçülür?</h2>
+
+<p>Büyük dil modellerinin bir kısım yanıtı kulağa çok akıcı ve güvenli gelse de gerçekte yanlış ya da tamamen uydurma bilgi içerebilir. Bunu yakalamanın standart yolu, modelin cevabını "doğru" bir referansla karşılaştırmaktır -- ama gerçek kullanımda böyle bir referansımız genellikle yoktur. Kullanıcı bir soru sorar, model bir cevap verir; o cevabın doğru olup olmadığını bilen kimse ortada yoktur.</p>
+
+<p>Bu projede, <a href="https://arxiv.org/abs/2303.08896" target="_blank" rel="noopener">SelfCheckGPT</a> (Manakul, Liusie &amp; Gales, 2023) çalışmasının genel fikrinden esinlenen, sıfır-kaynak (zero-resource) bir yaklaşımı kendi istem bataryamız, kendi çıkarım kodumuz ve kendi puanlama motorumuzla, gerçek ve çalışan bir kod tabanında uyguladık:</p>
+
+<ol>
+<li>Modele aynı olgusal soruyu, durağan olmayan (temperature &gt; 0) örnekleme ile <strong>N=5 kez</strong> sor.</li>
+<li>Beş bağımsız yanıtın birbiriyle -- ortak sayılar, isimler, tarihler, genel kelime örtüşmesi bakımından -- ne kadar <strong>uyuştuğunu</strong> ölç.</li>
+<li>Bu uyum düzeyini 0-100 arası bir <strong>Güvenilirlik Skoru</strong>na çevir.</li>
+</ol>
+
+<p>Mantık şu: model bir konuyu gerçekten "biliyorsa", beş örneklem de büyük ölçüde aynı bilgiyi tekrar eder. Halüsinasyon görüyorsa, her örneklemde farklı bir "gerçek" uydurabilir -- ve bu tutarsızlık, referans cevaba hiç ihtiyaç duymadan ölçülebilir bir sinyaldir.</p>
+
+<h2>Puanlama motoru: üç şeffaf sinyal</h2>
+
+<p><code>consistency_checker.py</code>, LLM-yargıç kullanmayan, tamamen kural/desen tabanlı bir motordur. Her istem için üç sinyali hesaplar ve ağırlıklı ortalamasını alır (bir sinyal hiç veri içermiyorsa devre dışı kalır, kalan ağırlıklar yeniden ölçeklenir):</p>
+
+<ul>
+<li><strong>Kelime düzeyinde örtüşme</strong> -- örneklemler arasındaki ortalama ikili Jaccard benzerliği.</li>
+<li><strong>Sayısal uyum</strong> -- örneklemlerin bahsettiği sayı/tarih kümelerinin ne kadarının aynı kombinasyonda birleştiği.</li>
+<li><strong>Özel ad uyumu</strong> -- aynı mantık, büyük harfle başlayan isim benzeri jetonlar üzerinden.</li>
+</ul>
+
+<p>26 özgün olgusal test istemi -- tarihsel olaylar, istatistik/sayılar, kişiler/alıntılar, tanımlar, aritmetik ve coğrafya olmak üzere 6 kategoride -- kendi yazdığımız bir bataryadan geliyor.</p>
+
+<h2>Neden gerçek bir API yerine yerel bir referans model?</h2>
+
+<p>Aracın <code>model_adapters.py</code> dosyası OpenAI, Anthropic ve Google Gemini API'lerine karşı doğrudan çalışacak şekilde inşa edildi. Ama bu projeyi geliştirdiğimiz ortamın ağ erişimini test ettiğimizde, denenen <strong>her</strong> barındırılan model API'si (OpenAI, Gemini, Groq, OpenRouter, Hugging Face, Together, Cohere) ağ geçidi seviyesinde HTTP 403 ile engellendi; Anthropic'in API'sine doğrudan erişilebiliyordu ama elimizde bir API anahtarı olmadığından yalnızca HTTP 401 aldık. Hiçbirine gerçek bir istek gönderemedik.</p>
+
+<p>Sahte, elle yazılmış örnek yanıtlar üretmek -- bu, gerçek bir modelin ne söylediğini yanlış temsil eder ve projenin "uydurmama" ilkesine bizzat aykırı olurdu. Bunun yerine <code>local_reference_model.py</code> içinde küçük ama <strong>tamamen gerçek ve çalıştırılabilir</strong> bir sistem inşa ettik: <code>markovify</code> ile bu proje için özgün yazılmış bir metin üzerinde eğitilmiş bir Markov zinciri üretici, üç farklı ve gerçek yanıt stratejisiyle sarmalanmış:</p>
+
+<ul>
+<li><strong>confident-fabricator</strong> -- her örneklemde farklı, uydurma ama tamamen kesin bir üslupla sunulan bir sayı/tarih/isim üretir.</li>
+<li><strong>hedging</strong> -- hiçbir zaman somut bir bilgi vermez; her seferinde neredeyse aynı sözcüklerle bir belirsizlik ifadesi tekrarlar.</li>
+<li><strong>grounded</strong> -- 20 girdilik küçük, sabit, elle yazılmış bir bilgi tabanından arama yapar ve her seferinde aynı doğru bilgiyi, hafif doğal dil varyasyonuyla döndürür.</li>
+</ul>
+
+<p>Üçü de aynı temel üreticiyi paylaşıyor; tek fark yanıt stratejisi. Bir API anahtarınız varsa, aynı aracı gerçek bir model üzerinde saniyeler içinde çalıştırabilirsiniz -- kod tabanı zaten buna hazır.</p>
+
+<h2>Gerçek sonuçlar (N=5 örneklem, 26 istem)</h2>
+
+<p>Sonuçları interaktif olarak, kategori kırılımlarıyla ve örnek yanıtlarla birlikte <a href="https://aix.web.tr/ai-halusinasyon-risk-panosu/">canlı gösterge panosunda</a> inceleyebilirsiniz. Özet tablo aşağıda:</p>
+
+<table>
+<thead>
+<tr><th>Yapılandırma</th><th>Güvenilirlik Skoru</th><th>Risk Düzeyi</th></tr>
+</thead>
+<tbody>
+<tr><td><code>confident-fabricator</code></td><td>34,1 / 100</td><td>YÜKSEK HALÜSİNASYON RİSKİ</td></tr>
+<tr><td><code>grounded</code></td><td>73,3 / 100</td><td>ORTA HALÜSİNASYON RİSKİ</td></tr>
+<tr><td><code>hedging</code></td><td>79,0 / 100</td><td>DÜŞÜK HALÜSİNASYON RİSKİ</td></tr>
+</tbody>
+</table>
+
+<p>İlk bakışta beklendiği gibi: güvenle uyduran yapılandırma en düşük skoru aldı (34,1). Ama bu tablo, kasıtlı olarak rahatsız edici bir sırayla duruyor.</p>
+
+<h2>En önemli bulgu: tutarlılık, doğruluğun garantisi değildir</h2>
+
+<p>Hiçbir zaman somut bir bilgi vermeyen ama her seferinde neredeyse aynı sözcüklerle kaçamak yapan <strong>hedging</strong> yapılandırması (79,0), gerçek bilgiye dayanan ve o bilgiyi tutarlı biçimde tekrarlayan <strong>grounded</strong> yapılandırmasından (73,3) <strong>daha yüksek</strong> skor aldı.</p>
+
+<p>Bunun nedeni basit ve tam da yöntemin doğasından kaynaklanıyor: puanlama motoru örneklemler arasında anlaşmazlık ölçebileceği somut bir şey (sayı, isim, tarih) bulamadığında, bunu yüksek tutarlılık olarak yorumluyor. "Bu konuda kesin bir şey söyleyemem" cümlesini beş kez neredeyse aynı şekilde tekrarlamak, teknik olarak çok "tutarlı"dır -- ama hiçbir bilgi içermez.</p>
+
+<p>Bu, teorik bir uyarı değil; aracı gerçekten çalıştırarak elde ettiğimiz, ölçülmüş bir bulgu. Pratik sonucu şu: bu yöntemin skoru tek başına yeterli değildir, bir yanıtın en azından somut bir iddia içerip içermediğine dair ayrı bir kontrolle birlikte okunmalıdır. Kategori kırılımına bakıldığında da örüntü aynı şekilde tutarlı: <code>hedging</code> altı kategorinin tamamında 76-81 aralığında sabit kalırken, <code>confident-fabricator</code> tüm kategorilerde 30-39 aralığında kalıyor -- yöntem gerçekten bir sinyal yakalıyor, sadece bu sinyalin "doğruluk" ile birebir örtüşmediğini de gösteriyor.</p>
+
+<h2>Aracı deneyin</h2>
+
+<pre><code>pip install -r requirements.txt
+
+# Ağ/API anahtarı gerektirmeyen yerel demo:
+python3 cli.py --provider local-reference --config grounded --samples-per-prompt 5 --out results/demo.json
+
+# Gerçek bir sağlayıcıya karşı (kendi API anahtarınızla):
+export OPENAI_API_KEY=sk-...
+python3 cli.py --provider openai --model gpt-4o-mini --samples-per-prompt 5 --out results/gpt4o-mini.json</code></pre>
+
+<p>Kod tabanı 37 birim ve uçtan-uca testle (pytest, gerçek ağ olmadan <code>requests_mock</code> ile) doğrulanmış durumda ve OpenAI, Anthropic, Gemini ile herhangi bir OpenAI-uyumlu uç noktayı (Groq, OpenRouter, yerel Ollama/vLLM) destekliyor.</p>
+
+<h2>Bağlantılar</h2>
+
+<ul>
+<li>Kod deposu (MIT lisanslı): <a href="https://github.com/mendaxyazilim/ai-hallucination-detector" target="_blank" rel="noopener">github.com/mendaxyazilim/ai-hallucination-detector</a></li>
+<li>Canlı gösterge panosu: <a href="https://aix.web.tr/ai-halusinasyon-risk-panosu/">aix.web.tr/ai-halusinasyon-risk-panosu</a></li>
+<li>Sister proje: <a href="https://aix.web.tr/ai-modelleri-guvenli-mi-guvenlik-denetleyicisi/" target="_blank" rel="noopener">AI Modelleri Güvenli mi? Kendi Güvenlik Denetleyicimizi Yaptık</a></li>
+</ul>
+
+<p><em>Bu projedeki tüm sayılar, aracın kendi kodu gerçekten çalıştırılarak üretildi -- elle yazılmış tek bir örnek yanıt ya da elle uydurulmuş tek bir skor yok. Sonuçlar yalnızca bu projenin yerel demo sistemini kapsar; herhangi bir gerçek üretim modelinin halüsinasyon davranışına dair bir iddia içermez.</em></p>
